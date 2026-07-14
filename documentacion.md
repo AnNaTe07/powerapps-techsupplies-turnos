@@ -22,7 +22,7 @@ La solución está compuesta por dos aplicaciones integradas que permiten admini
 
 ## Turno actual y publicidad
 
-![Turno actual y publicidad](assets/publicidad.png)
+![Turno actual y publicidad](assets/publicidad2.png)
 
 ---
 
