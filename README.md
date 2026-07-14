@@ -87,7 +87,7 @@ Ambas aplicaciones comparten el mismo origen de datos en **SharePoint Online**, 
 
 La documentación completa del proyecto se encuentra disponible en:
 
-📄 **documentacion.md**
+📄 - [Documentación del proyecto](documentacion.md)
 
 ---
 
