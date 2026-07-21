@@ -4,25 +4,27 @@ Aplicación desarrollada con **Microsoft Power Apps**, utilizando **SharePoint O
 
 La solución está compuesta por dos aplicaciones integradas que permiten administrar la emisión de turnos y mostrar información en tiempo real a los clientes mediante una pantalla pública.
 
----
+# Contenido
 
-# Capturas de la aplicación
-
-## Selección de ventanilla
-
-![Selección de ventanilla](assets/seleccion-ventanilla.png)
-
----
-
-## Emisión de turnos
-
-![Cambio de turno](assets/cambio-turno.png)
-
----
-
-## Turno actual y publicidad
-
-![Turno actual y publicidad](assets/publicidad2.png)
+- [Descripción del proyecto](#descripción-del-proyecto)
+- [Objetivos](#objetivos)
+- [Caso de negocio](#caso-de-negocio)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Arquitectura](#arquitectura)
+- [Modelo de datos](#modelo-de-datos)
+- [Aplicación 1 - Cambio de Turno](#aplicación-1---cambio-de-turno)
+- [Aplicación 2 - Turno Publicitario](#aplicación-2---turno-publicitario)
+- [Variables principales](#variables-principales)
+- [Flujo de funcionamiento](#flujo-de-funcionamiento)
+- [Funcionalidades implementadas](#funcionalidades-implementadas)
+- [Diseño de la interfaz](#diseño-de-la-interfaz)
+- [Decisiones de diseño](#decisiones-de-diseño)
+- [Características destacadas](#características-destacadas)
+- [Integración con SharePoint](#integración-con-sharepoint)
+- [Conceptos de Power Platform aplicados](#conceptos-de-power-platform-aplicados)
+- [Posibles mejoras futuras](#posibles-mejoras-futuras)
+- [Buenas prácticas aplicadas](#buenas-prácticas-aplicadas)
+- [Conclusión](#conclusión)
 
 ---
 
@@ -63,6 +65,26 @@ Ambas aplicaciones comparten la información almacenada en SharePoint Online, pe
 
 ---
 
+# Capturas de la aplicación
+
+## Selección de ventanilla
+
+![Selección de ventanilla](assets/seleccion-ventanilla.png)
+
+---
+
+## Emisión de turnos
+
+![Cambio de turno](assets/cambio-turno.png)
+
+---
+
+## Turno actual y publicidad
+
+![Turno actual y publicidad](assets/publicidad2.png)
+
+---
+
 # Tecnologías utilizadas
 
 | Tecnología | Función |
@@ -96,7 +118,7 @@ Ambas aplicaciones comparten la información almacenada en SharePoint Online, pe
                   Clientes
 ```
 
-Las dos aplicaciones utilizan el mismo origen de datos, permitiendo mantener sincronizada toda la información sin duplicar registros.
+Ambas aplicaciones utilizan SharePoint Online como origen de datos común, permitiendo mantener sincronizada la información en tiempo real sin duplicar registros. Esta arquitectura desacopla la lógica de cada aplicación y facilita el mantenimiento de la solución.
 
 ---
 
@@ -396,6 +418,63 @@ La solución fue diseñada para permitir futuras ampliaciones. Algunas funcional
 - Panel de indicadores.
 - Integración con Power BI.
 - Emisión de tickets mediante impresora.
+
+---
+
+# Buenas prácticas aplicadas
+
+Durante el desarrollo de la solución se aplicaron distintas estrategias para mejorar la organización de la aplicación, facilitar su mantenimiento y optimizar la experiencia de usuario.
+
+---
+
+## Separación de responsabilidades
+
+La solución fue dividida en dos aplicaciones independientes con responsabilidades claramente definidas:
+
+- **Cambio de Turno**, destinada a la emisión y administración de turnos por parte de los operadores.
+- **Turno Publicitario**, orientada a la visualización del turno actual, los próximos turnos y la publicidad para los clientes.
+
+Esta separación permitió simplificar el mantenimiento y mantener desacoplada la lógica de cada aplicación.
+
+---
+
+## Centralización de la información
+
+Ambas aplicaciones comparten una única fuente de datos mediante **SharePoint Online**, permitiendo mantener toda la información sincronizada en tiempo real.
+
+Esta estrategia evita inconsistencias entre aplicaciones y facilita la administración de los datos.
+
+---
+
+## Implementación de la lógica mediante Power Fx
+
+La lógica de negocio fue desarrollada utilizando **Power Fx**, aplicando funciones para consultar, actualizar y administrar la información almacenada en SharePoint.
+
+Entre las principales funciones utilizadas se encuentran:
+
+- Patch.
+- Filter.
+- LookUp.
+- Sort.
+- Variables globales.
+- Variables de contexto.
+- Colecciones.
+
+Esta organización permitió desarrollar una aplicación más mantenible y sencilla de extender.
+
+---
+
+## Actualización en tiempo real
+
+La solución fue diseñada para reflejar automáticamente los cambios realizados sobre SharePoint, garantizando que operadores y clientes visualicen siempre información actualizada durante el proceso de atención.
+
+---
+
+## Diseño orientado a la experiencia de usuario
+
+La interfaz fue diseñada para facilitar la operación diaria mediante una distribución clara de la información y una navegación sencilla.
+
+Además, la pantalla publicitaria permite visualizar en tiempo real el turno actual, los próximos turnos y contenido publicitario, mejorando la experiencia de espera de los clientes.
 
 ---
 
