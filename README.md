@@ -2,6 +2,18 @@
 
 Aplicación desarrollada con **Microsoft Power Apps**, **SharePoint Online** y **Power Fx** para administrar la emisión de turnos y mostrar información en tiempo real mediante una pantalla publicitaria.
 
+# Contenido
+
+- [Descripción](#descripción)
+- [Características principales](#características-principales)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Capturas de pantalla](#capturas-de-pantalla)
+- [Arquitectura](#arquitectura)
+- [Documentación](#documentación)
+- [Competencias técnicas](#competencias-técnicas)
+- [Estado del proyecto](#estado-del-proyecto)
+- [Autor](#autor)
+
 ---
 
 # Descripción
@@ -34,9 +46,9 @@ Ambas aplicaciones comparten el mismo origen de datos en **SharePoint Online**, 
 
 # Tecnologías utilizadas
 
-- Microsoft Power Apps
-- Power Fx
-- SharePoint Online
+![Microsoft Power Apps](https://img.shields.io/badge/Microsoft_Power_Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white)
+![Power Fx](https://img.shields.io/badge/Power_Fx-0066FF?style=for-the-badge)
+![SharePoint Online](https://img.shields.io/badge/SharePoint_Online-107C10?style=for-the-badge&logo=microsoftsharepoint&logoColor=white)
 
 ---
 
@@ -91,9 +103,9 @@ La documentación completa del proyecto se encuentra disponible en:
 
 ---
 
-# Conceptos aplicados
+# Competencias técnicas
 
-Durante el desarrollo se implementaron los principales conceptos de Microsoft Power Platform:
+Durante el desarrollo del proyecto se aplicaron conceptos relacionados con el desarrollo de aplicaciones empresariales utilizando Microsoft Power Platform, entre ellos:
 
 - Variables globales.
 - Variables de contexto.
@@ -109,9 +121,9 @@ Durante el desarrollo se implementaron los principales conceptos de Microsoft Po
 
 # Estado del proyecto
 
-Proyecto finalizado.
+🟢 Proyecto finalizado.
 
-La solución integra dos aplicaciones conectadas mediante SharePoint Online para gestionar la emisión de turnos y mostrar información en tiempo real a los clientes.
+El repositorio documenta una solución desarrollada con Microsoft Power Platform para la gestión de turnos y visualización de información en tiempo real, integrando dos aplicaciones conectadas mediante SharePoint Online.
 
 ---
 
